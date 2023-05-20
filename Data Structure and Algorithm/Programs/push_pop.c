@@ -24,12 +24,50 @@ void pop(){
 	}
 }
 
+void peek(){
+	printf("%d\n",arr[tos]);
+}
+
+void size(){
+	printf("%d",tos+1);
+}
+
+void isEmpty(){
+	if(tos == -1){
+		printf("empty\n");
+	}
+	else{
+		printf("not empty\n");
+	}
+}
+
+void isFull(){
+	if(tos == 9){
+		printf("full\n");
+	}
+	else{
+		printf("not full\n");
+	}
+}
+
+void display(){
+	int i;
+	for(i = 0; i <= tos; i++){
+		printf(" %d",arr[i]);
+	}
+	printf("\n");
+}
+
 int main(){
 	int num , ch;
 start:
 	printf("1.push\n");
 	printf("2.pop\n");
-	printf("3.exit\n");
+	printf("3.check empty\n");
+	printf("4.check full\n");
+	printf("5.peak\n");
+	printf("6.display\n");
+	printf("7.exit\n");
 	scanf("%d",&ch);
 	if(ch == 1){
 		printf("enter value to push\n");
@@ -42,13 +80,29 @@ start:
 		goto start;
 	}
 	else if(ch == 3){
+		isEmpty();
+		goto start;
+	}
+	else if(ch == 4){
+		isFull();
+		goto start;
+	}
+	else if(ch == 5){
+		peek();
+		goto start;
+	}
+	else if(ch == 6){
+		display();
+		goto start;
+	}
+	else if(ch == 7){
 		goto end;
 	}
 	else{
-		printf("invalid input!");
+		printf("invalid input!\n");
+		goto start;
 	}
 end:
-	system("clear");
 }
 
 

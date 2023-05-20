@@ -8,7 +8,7 @@ void init2D(float r, float g, float b){
 
 void Display(void){
 	glClear(GL_COLOR_BUFFER_BIT);
-	glColor3f(1.0,0.0,0.0);
+	glColor3f(1.0,1.0,0.0);
 	glBegin(GL_POINTS);
 	for(int i=0 ; i<10 ; i++){
 		glVertex2i(10+5*i,110);
