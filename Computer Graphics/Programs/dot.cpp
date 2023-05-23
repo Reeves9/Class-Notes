@@ -1,7 +1,7 @@
 #include <iostream>
 #include <GL/glut.h>
 
-using std::cout;
+using namespace std;
 
 GLsizei wh = 500;
 GLsizei ww = 500;
@@ -15,8 +15,8 @@ void Displaydot(void){
 }
 
 void MyInit(void){
-	cout << glGetString(GL_VERSION) << "/n";
-	cout << glGetString(GL_VENDOR) << "/n";
+	cout << glGetString(GL_VERSION) << endl;
+	cout << glGetString(GL_VENDOR) << endl;
 	glClearColor(0.0,0.0,0.0,0.0);
 	glColor3f(0.0f,1.0f,1.0f);
 	glPointSize(10.0);
