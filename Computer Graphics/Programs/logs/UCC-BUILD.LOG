@@ -1,0 +1,8 @@
+DOSBox version 0.74-3
+Copyright 2002-2019 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file /home/reeves/.dosbox/dosbox-0.74-3.conf
+ALSA:Can't subscribe to MIDI port (65:0) nor (17:0)
+MIDI:Opened device:none
+SHELL:Redirect output to ..\logs\TCC.LOG
+DOSBox switched to max cycles, because of the setting: cycles=auto. If the game runs too fast try a fixed cycles amount in DOSBox's options.
