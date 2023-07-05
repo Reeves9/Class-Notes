@@ -99,11 +99,70 @@ void insertAtMiddle(int data , int position){
     }
   }
 }
+void deleteFirstNode(){
+  struct node *toDelete;
+  if (head == NULL){
+    printf("list is empty\n");
+  }else{
+    toDelete = head;
+    head = head->next;
+    printf("data deleted = %d\n",toDelete->data);
+    free(toDelete);
+    printf("deleted successfully\n");
+  }
+}
+void deleteLastNode(){
+  struct node *toDelete , *secondLastNode;
+  if(head == NULL){
+    printf("list is empty\n");
+  }else{
+    toDelete = head;
+    secondLastNode = head;
+    while (toDelete->next != NULL){
+      secondLastNode = toDelete;
+      toDelete = toDelete->next;
+    }
+    if (toDelete == head){
+      head == NULL;
+    }else{
+      secondLastNode->next = NULL;
+      free(toDelete);
+      printf("deleted successfully\n");
+    }
+  }
+}
+void deleteMiddleNode(int position){
+  int i;
+  struct node *toDelete , *prevNode;
+  if (head == NULL){
+    printf("list is empty\n");
+  }else{
+    toDelete = head;
+    prevNode = head;
+    for (i = 2 ; i < position ; i++){
+      prevNode = toDelete;
+      toDelete = toDelete->next;
+      if(toDelete == NULL){
+        break;
+      } 
+    }
+    if(toDelete != NULL){
+      if (toDelete == head){
+        head = head->next;
+      }
+      prevNode->next = toDelete->next;
+      toDelete->next = NULL;
+      free(toDelete);
+    }else{
+      printf("invalid position\n");
+    }
+  }
+}
 int main(){
   int n,ch,position,data;
   bool Exit = 0;
   while(Exit == 0){
-    printf("1.createList\n2.insertAtBegin\n3.insertAtMiddle\n4.insertAtEnd\n5.display\n6.exit\n");
+    printf("1.createList\n2.insertAtBegin\n3.insertAtMiddle\n4.insertAtEnd\n5.deleteFirstNode\n6.deleteLastNode\n7.deleteMiddleNode\n8.Exit\n");
     scanf("%d",&ch);
     switch (ch){
       case 1:
@@ -129,12 +188,20 @@ int main(){
         insertAtEnd(data);
         break;
       case 5:
-        traverse();
+        deleteFirstNode();
+        break;
       case 6:
+        deleteLastNode();
+        break;
+      case 7:
+        printf("enter postition to be deleted\n");
+        scanf("%d",&position);
+        deleteMiddleNode(position);
+        break;
+      case 8:
         Exit = 1;
         break;
     }
   }
-  
   return 0;
 }
