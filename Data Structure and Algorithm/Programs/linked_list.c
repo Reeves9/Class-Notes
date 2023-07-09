@@ -162,7 +162,7 @@ int main(){
   int n,ch,position,data;
   bool Exit = 0;
   while(Exit == 0){
-    printf("1.createList\n2.insertAtBegin\n3.insertAtMiddle\n4.insertAtEnd\n5.deleteFirstNode\n6.deleteLastNode\n7.deleteMiddleNode\n8.Exit\n");
+    printf("1.createList\n2.insertAtBegin\n3.insertAtMiddle\n4.insertAtEnd\n5.deleteFirstNode\n6.deleteLastNode\n7.deleteMiddleNode\n8.display\n9.exit\n");
     scanf("%d",&ch);
     switch (ch){
       case 1:
@@ -199,6 +199,9 @@ int main(){
         deleteMiddleNode(position);
         break;
       case 8:
+        traverse();
+        break;
+      case 9:
         Exit = 1;
         break;
     }
