@@ -19,11 +19,5 @@ These Contain:
 - TOC
 
 **I don't have Numerical Method notes as it is very hard to type and Sir didn't provide them**
-<<<<<<< HEAD
 **pdf password is dyxh6BYNFwEp7Ucj7UJ8vnDYjubUWagZjETZ6JDpQUnMEaGnUf**
-=======
-
-**pdf password is dyxh6BYNFwEp7Ucj7UJ8vnDYjubUWagZjETZ6JDpQUnMEaGnUf**
-
 **No lab file available till now**
->>>>>>> origin/master
