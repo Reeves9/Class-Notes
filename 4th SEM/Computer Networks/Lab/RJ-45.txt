@@ -1,0 +1,37 @@
+Color coding of twisted pair cable:
+1. Orange(O)
+2. Orange White(o)
+3. Blue(B)
+4. Blue White(b)
+5. Green(G)
+6. Green White(g)
+7. Brown(BR)
+8. Brown White(br)
+
+Straight cable connection:
+Node A                   Node B
+1. o                     
+2. O
+3. g
+4. B                     Same as Node A
+5. b                     
+6. G
+7. br
+8. BR
+
+Cross cable connection
+Node A                   Node B
+1. o                     3
+2. O                     6
+3. g                     1
+4. B                     4
+5. b                     5
+6. G                     2
+7. br                    7
+8. BR                    8
+
+RJ-45 connector orientation:
+clip down , hole towards self
+
+
+
