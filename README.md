@@ -1,4 +1,4 @@
-# These are all the notes I have of Third and Fourth semester.
+# These are all the notes I have of Third and Fourth semester
 
 These Contain:
 
