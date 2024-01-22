@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 import random
 import matplotlib.pyplot as plt
-=======
 import pygame
 import random
->>>>>>> origin/master
 
 class VacuumAgent:
     def __init__(self, grid_size):
@@ -12,7 +9,6 @@ class VacuumAgent:
         self.grid = [[random.choice(['clean', 'obstacle', 'dirt']) for _ in range(grid_size)] for _ in range(grid_size)]
         self.visited = set()
         self.position = (0, 0)
-<<<<<<< HEAD
         self.movements = [(0, 0)]
 
     def display_grid(self):
@@ -28,7 +24,6 @@ class VacuumAgent:
         plt.ylabel('Y-axis')
         plt.grid(True)
         plt.show()
-=======
 
         # Pygame setup
         self.cell_size = 50
@@ -54,7 +49,6 @@ class VacuumAgent:
         pygame.draw.rect(self.screen, (0, 255, 0), (self.position[0] * self.cell_size, self.position[1] * self.cell_size, self.cell_size, self.cell_size))
 
         pygame.display.flip()
->>>>>>> origin/master
 
     def move_towards_dirt(self):
         x, y = self.position
@@ -81,23 +75,18 @@ class VacuumAgent:
         self.visited.add(self.position)
         self.position = next_move
         self.clean_dirt()
-<<<<<<< HEAD
         self.movements.append(next_move)
-=======
->>>>>>> origin/master
 
 if __name__ == "__main__":
     grid_size = 5
     vacuum_agent = VacuumAgent(grid_size)
 
-<<<<<<< HEAD
     for _ in range(10):
         vacuum_agent.display_grid()
         vacuum_agent.move()
 
     vacuum_agent.display_grid()
     vacuum_agent.display_movement()
-=======
     running = True
     while running:
         for event in pygame.event.get():
@@ -110,4 +99,3 @@ if __name__ == "__main__":
 
     pygame.quit()
 
->>>>>>> origin/master
