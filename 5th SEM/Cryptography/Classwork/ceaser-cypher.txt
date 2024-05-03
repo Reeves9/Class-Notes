@@ -1,0 +1,54 @@
+1)
+plaintext: reeshavmainali
+key: 3
+Encryption:
+c=E[K,P]
+c=uhhvkdypdlqdol
+
+2)
+Key(k) = n (n>=1)
+we take n = 15
+ie. k = 15
+plaintest: cryptography
+Encryption:
+plaintext   index   c=(p+k)mod26   substitute of p
+c	    2        17            r
+r           7        16            q  
+y           24       13            n     
+p           15       4             e       
+t           19       8             i   
+o           14       3             d   
+g           6        21            v       
+r           17       6             g        
+a           0        15            p      
+p           15       4             e         
+h           7        22            w          
+y           24       13            n   
+
+Decryption:
+cyphertext   index   p=(p-k)mod26   substitute of c
+r            17      2              c                                          
+q            16      7              r          
+n            13      24             y             
+e            4       15             p            
+i            8       19             t            
+d            3       14             o            
+v            21      6              g            
+g            6       17             r            
+p            15      0              a            
+e            4       15             p            
+w            22      7              h            
+n            13      24             y             
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
