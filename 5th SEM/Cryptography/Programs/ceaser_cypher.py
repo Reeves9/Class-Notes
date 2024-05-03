@@ -16,7 +16,8 @@ choice = int(input("Enter 1 for encrypt or 2 for decrypt: "))
 if choice == 1:
     encrypted_text = caesar_cipher(plain_text, int(key), "encrypt")
     print(f"Encrypted text: {encrypted_text}")
-else:
+elif choice == 2:
     decrypted_text = caesar_cipher(plain_text, int(key), "decrypt")
     print(f"Decrypted text: {decrypted_text}")
-
+else:
+     print(f"wrong operation")
