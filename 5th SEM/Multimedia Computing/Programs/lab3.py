@@ -17,3 +17,6 @@ print("tiff size: {} bytes".format(tiff_size))
 with open("Lenna.jpg", "rb") as f:
     jpg_size = len(f.read())
     print("jpeg size: {} bytes ".format(jpg_size))
+# Convert into greyscale
+img_grey = img.convert('L')
+img_grey.save("Lenna_grey.jpg", "JPEG")
