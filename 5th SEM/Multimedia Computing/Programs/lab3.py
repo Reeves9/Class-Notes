@@ -10,6 +10,10 @@ img.save("Lenna.tiff", "TIFF")
 jpg_size = os.path.getsize("Lenna.jpg")
 tiff_size = os.path.getsize("Lenna.tiff")
 png_size = os.path.getsize("Lenna.png")
-print("jpeg size: {} bytes".format(jpg_size))
 print("png size: {} bytes".format(png_size))
+print("jpeg size: {} bytes".format(jpg_size))
 print("tiff size: {} bytes".format(tiff_size))   
+# Actaul disk size
+with open("Lenna.jpg", "rb") as f:
+    jpg_size = len(f.read())
+    print("jpeg size: {} bytes ".format(jpg_size))
