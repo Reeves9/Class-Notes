@@ -26,7 +26,7 @@ plt.show()
 
 #histogram of binary image
 plt.figure(figsize=(8, 6))
-plt.hist(binary_array.flatten(), bins=256, range=(0, 255))
+plt.hist(binary_array.flatten(), bins=20, range=(0, 255))
 plt.title('Histogram of Binary Image')
 plt.xlabel('Pixel Value')
 plt.ylabel('Frequency')
@@ -34,7 +34,7 @@ plt.show()
 
 #histogram of grey_image
 plt.figure(figsize=(8, 6))
-plt.hist(grey_array.flatten(), bins=256, range=(0, 255))
+plt.hist(grey_array.flatten(), bins=20, range=(0, 255))
 plt.title('Histogram of Grayscale Image')
 plt.xlabel('Pixel Value')
 plt.ylabel('Frequency')
