@@ -22,3 +22,12 @@ plt.title('Binary Image')
 plt.axis('off')
 
 plt.show()
+
+#histogram of binary image
+plt.figure(figsize=(8, 6))
+plt.hist(binary_array, bins=2, range=(0, 255))
+plt.title('Histogram of Binary Image')
+plt.xlabel('Pixel Value')
+plt.ylabel('Frequency')
+plt.show()
+
