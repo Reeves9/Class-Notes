@@ -9,7 +9,7 @@ threshold = 128
 binary_array = np.where(grey_array > threshold, 0, 255)
 
 binary_image = Image.fromarray(binary_array.astype(np.uint8))
-binary_image.save("Lenna_binary.jpg", "JPEG")
+binary_image.save("Lenna_binary_inverted.jpg", "JPEG")
 
 plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
@@ -19,21 +19,21 @@ plt.axis('off')
 
 plt.subplot(1, 2, 2)
 plt.imshow(binary_image, cmap='binary')
-plt.title('Binary Image')
+plt.title('Inverted Binary Image')
 plt.axis('off')
 
 plt.show()
 
 #histogram of binary image
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(10, 5))
+plt.subplot(1,2,1)
 plt.hist(binary_array.flatten(), bins=20, range=(0, 255))
 plt.title('Histogram of Binary Image')
 plt.xlabel('Pixel Value')
 plt.ylabel('Frequency')
-plt.show()
 
 #histogram of grey_image
-plt.figure(figsize=(8, 6))
+plt.subplot(1,2,2)
 plt.hist(grey_array.flatten(), bins=20, range=(0, 255))
 plt.title('Histogram of Grayscale Image')
 plt.xlabel('Pixel Value')
