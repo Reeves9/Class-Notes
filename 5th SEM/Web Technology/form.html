@@ -7,35 +7,53 @@
       body {
         font-family: "JetBrainsMono Nerd Font";
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+      }
+      .form-container {
+        border: 1px solid #666;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        width: 400px;
+        background-color: #444;
       }
     </style>
   </head>
   <body>
-    <h1 style="align-self: center">This an example of an form.</h1>
-    <form action="">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required /><br />
-      <label for="Address">Address:</label>
-      <input type="text" id="address" name="address" required /> <br />
-      <label for="contact">Contact:</label>
-      <input type="tel" id="contact" name="contact" required /> <br />
-      <label for="Gender">Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" required />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female" required />
-      <label for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="other" required />
-      <label for="other">Other</label><br />
-      <label for="Role">Role:</label>
-      <select id="role" name="role" required>
-        <option value="admin">Admin</option>
-        <option value="viewer">Viewer</option>
-        <option value="editor">Editor</option></select
-      ><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
+    <h1>This an example of an form.</h1>
+    <div class="form-container">
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="Address">Address:</label>
+        <input type="text" id="address" name="address" required /> <br />
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" required /> <br />
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required />
+        <label for="other">Other</label><br />
+        <label for="Role">Role:</label>
+        <select id="role" name="role" required>
+          <option value="admin">Admin</option>
+          <option value="viewer">Viewer</option>
+          <option value="editor">Editor</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
+</html>
+
+</html>
+
 </html>
