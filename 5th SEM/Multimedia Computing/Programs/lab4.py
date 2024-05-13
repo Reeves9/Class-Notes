@@ -31,3 +31,13 @@ plt.xlabel('Pixel Value')
 plt.ylabel('Frequency')
 plt.show()
 
+#histogram of grey_image
+plt.figure(figsize=(8, 6))
+plt.hist(grey_array, bins=256, range=(0, 255))
+plt.title('Histogram of Grayscale Image')
+plt.xlabel('Pixel Value')
+plt.ylabel('Frequency')
+plt.show()
+
+
+
