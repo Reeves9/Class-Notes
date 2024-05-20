@@ -1,0 +1,42 @@
+body {
+  font-family: cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+}
+h1 {
+  font-weight: bold;
+}
+.form {
+  width: 50%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #666;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(239, 236, 236, 0.1);
+  background-color: #444;
+}
+form {
+  width: 50%;
+}
+.form input,
+.form select {
+  margin-bottom: 10px;
+  width: 300px;
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+input[type="submit"] {
+  width: 100px;
+}
