@@ -30,10 +30,12 @@ form {
   display: flex;
   flex-direction: column;
 }
-.form input,
-.form select {
+.form input {
   margin-bottom: 10px;
   width: 300px;
+}
+form input:hover {
+  cursor: pointer !important;
 }
 .input-group {
   display: flex;
