@@ -35,7 +35,6 @@ form {
 .input-group {
   display: flex;
   justify-content: space-between;
-  width: 80%;
 }
 input[type="submit"] {
   width: 100px;
