@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_Selector</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+        width: 50%;
+        background-color: #1e1e2c;
+        margin: 0px;
+      }
+      input {
+        text-align: center;
+        /* display: block; */
+        border: 2px solid;
+        margin-bottom: 5px;
+        border-radius: 10px;
+      }
+      button {
+        /* display: block; */
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+        color: aliceblue;
+        /* display: block; */
+        margin: auto;
+        border: 2px dotted;
+        width: 30px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="back">
+      <input type="number" name="num1" id="num1" />
+      <input type="number" name="num2" id="num2" />
+      <button type="button" onclick="sum()">SUM</button>
+      <button type="button" onclick="bgchange()">Change</button>
+      <p id="out"></p>
+    </div>
+  </body>
+  <script>
+    function bgchange() {
+      debugger;
+      var bg = document.getElementById("back");
+      var text = document.getElementById("out");
+      if (bg.style.backgroundColor == "rgb(30, 30, 44)") {
+        bg.style.backgroundColor = "aliceblue";
+        text.style.color = "rgb(30, 30, 44)";
+      } else {
+        bg.style.backgroundColor = "rgb(30, 30, 44)";
+        text.style.color = "aliceblue";
+      }
+    }
+    function sum() {
+      var num1 = Number(document.getElementById("num1").value);
+      var num2 = Number(document.getElementById("num2").value);
+      var sum = num1 + num2;
+      document.getElementById("out").innerHTML = sum;
+    }
+  </script>
+</html>
