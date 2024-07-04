@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+    <script src="jquery.js"></script>
+    <style>
+      .main {
+        width: 500px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+      }
+      .discription {
+        padding: 10px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        display: none;
+        background-color: rgb(43, 43, 43);
+        color: aliceblue;
+      }
+      .discription p {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JQuery</h1>
+    <div class="main">
+      <input type="text" name="Phrase" id="phrase" />
+      <div class="discription">
+        <p>
+          This is a hidden compartment which can only be activated by clicking
+          the button
+        </p>
+      </div>
+      <button type="button">Click me.</button>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("h1").text($("input[name=Phrase]").val());
+        $(".discription").slideToggle();
+      });
+      $("#phrase").focusin(function () {
+        $(this).css("background", "rgb(5, 152, 98)");
+      });
+      $("#phrase").focusout(function () {
+        $(this).css("background", "rgb(255, 255, 255)");
+      });
+    });
+  </script>
+</html>

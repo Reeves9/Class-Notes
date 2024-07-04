@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validaion</title>
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        let phone = document.forms["myForm"]["fphone"].value;
+        alert(phone);
+        if (phone == "") {
+          alert("phone numbr is required");
+        } else if (phone.length < 10 || phone.length > 10) {
+          alert("phone number must be length of 10");
+        }
+        if (x == "") {
+          alert("name is required");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JS Form validation</h2>
+    <form name="myForm" onsubmit="validateForm()">
+      Name: <input type="text" name="fname" /><br />
+      Phone: <input type="number" name="fphone" /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

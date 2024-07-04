@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.para {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1e222a;
+  color: #babbbd;
+  border: #1e222a;
+  border-radius: 10px;
+}
+
+.para:hover {
+  background-color: #89a3c2;
+  color: #f3e8d7;
+  transition: cubic-bezier();
+  transition-duration: 200ms;
+  scale: 125%;
+}
+
+.para:hover p {
+  transition: cubic-bezier();
+  transition-duration: 200ms;
+}
+.para:last-child {
+  background-color: red;
+}
+
+.para:first-child {
+  background-color: red;
+}
+
+.para:nth-child(2) {
+  background-color: rgb(79, 129, 112);
+  color: #1e222a;
+}
