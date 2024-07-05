@@ -4,11 +4,11 @@ These Contain:
 
 3rd SEM
 
-- Computer Architecture
-- Computer Graphics
-- Data STructure and Algorithm
-- Numerical Method
-- Statistics II
+- CA
+- CG
+- DSA
+- NM
+- Stat II
 
 4th SEM
 
@@ -17,6 +17,15 @@ These Contain:
 - DBMS
 - OS
 - TOC
+
+5th SEM
+
+-Crypto
+-DAA
+-MC
+-S&M
+-SAD
+-Web Tech
 
 I don't have Numerical Method notes as it is very hard to type and Sir didn't provide them
 
