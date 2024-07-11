@@ -44,3 +44,10 @@ def decrypt(message):
     return decrypted_message
 
 message = input("enter message: ")
+choice = input("encrypt or decrypt: ")
+if choice == "encrypt":
+    print(encrypt(message))
+elif choice == "decrypt":
+    print(decrypt(message))
+else:
+    print("invalid choice")
