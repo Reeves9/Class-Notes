@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #333;
+        color: #fff;
+      }
+      button {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>this content is above xmlhttprequest</p>
+    <div id="content">
+      <!-- Dynamic content -->
+    </div>
+    <p>this content is above xmlhttprequest</p>
+    <button onclick="loadDoc()">Change content</button>
+  </body>
+  <script>
+    function loadDoc() {
+      var content = document.getElementById("content").innerHTML;
+      if (content != "") {
+        document.getElementById("content").innerHTML = "";
+        return;
+      }
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("content").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "http_info.txt", true);
+      xhttp.send();
+    }
+  </script>
+</html>
