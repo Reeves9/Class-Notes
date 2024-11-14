@@ -20,4 +20,4 @@ elif choice == 2:
     decrypted_text = caesar_cipher(plain_text, int(key), "decrypt")
     print(f"Decrypted text: {decrypted_text}")
 else:
-     print("wrong operation")
+    print("wrong operation")
