@@ -10,6 +10,7 @@ namespace digits{
             return result;
         }
         static void Main(){
+            // finding strong number
             int num,proxy,rem,fac=0;
             Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
@@ -24,6 +25,7 @@ namespace digits{
             }else{
                 Console.WriteLine("Not strong number");
             }
+            // fing sum of individual digits
             int sum=0;
             Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
@@ -33,6 +35,21 @@ namespace digits{
                 num /= 10;
             }
             Console.WriteLine($"The sum is {sum}");
+            // finding dudeni number
+            Console.Write("Enter a number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            proxy = num
+            while (num != 0){
+                rem = num % 10;
+                sum += rem;
+                num /= 10;
+            }
+            num = num * num * num;
+            if (num == proxy){
+                Console.WriteLine("Dudeni number");
+            }else{
+                Console.WriteLine("Not dudeni number");
+            }
         }
     }
 }
