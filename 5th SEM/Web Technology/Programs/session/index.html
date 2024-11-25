@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form action="formSubmit.php" method="POST">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+
+      <label for="country">Country:</label><br />
+      <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+        <option value="germany">Germany</option></select
+      ><br /><br />
+
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <label>Favorite Colors:</label><br />
+      <input type="checkbox" id="red" name="colors[]" value="red" />
+      <label for="red">Red</label>
+      <input type="checkbox" id="blue" name="colors[]" value="blue" />
+      <label for="blue">Blue</label>
+      <input type="checkbox" id="green" name="colors[]" value="green" />
+      <label for="green">Green</label>
+      <input type="checkbox" id="yellow" name="colors[]" value="yellow" />
+      <label for="yellow">Yellow</label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
