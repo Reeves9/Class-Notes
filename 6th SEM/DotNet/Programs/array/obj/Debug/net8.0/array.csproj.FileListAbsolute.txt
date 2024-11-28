@@ -1,0 +1,15 @@
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.GeneratedMSBuildEditorConfig.editorconfig
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.AssemblyInfoInputs.cache
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.AssemblyInfo.cs
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.csproj.CoreCompileInputs.cache
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.sourcelink.json
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/bin/Debug/net8.0/array
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/bin/Debug/net8.0/array.deps.json
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/bin/Debug/net8.0/array.runtimeconfig.json
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/bin/Debug/net8.0/array.dll
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/bin/Debug/net8.0/array.pdb
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.dll
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/refint/array.dll
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.pdb
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/array.genruntimeconfig.cache
+/home/reeves/Class-Notes/6th SEM/DotNet/Programs/array/obj/Debug/net8.0/ref/array.dll
