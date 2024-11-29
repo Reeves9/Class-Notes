@@ -1,4 +1,4 @@
-﻿// input size of array and find sum of elements
+﻿// operations on arrays and varioous algorithms
 using System;
 
 namespace array
@@ -36,9 +36,40 @@ namespace array
                     }
                 }
             }
-            Console.Write("Sortes array is: ");
+            Console.Write("Sorted array is: ");
             for (int i=0;i<size;i++){
                 Console.Write($" {array[i]}");
+                Console.WriteLine("");
+            }
+            // multi dimentional array and sum of matrices
+            int[,] mat1 = new int[3,3];
+            int[,] mat2 = new int[3,3];
+            Console.WriteLine("For first Matrix");
+            for (int i=0;i<3;i++){
+                for (int j=0;j<3;j++){
+                    Console.Write($"enter value of position {i} {j}:");
+                    mat1[i,j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("For second Matrix");
+            for (int i=0;i<3;i++){
+                for (int j=0;j<3;j++){
+                    Console.Write($"enter value of position {i} {j}:");
+                    mat2[i,j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i=0;i<3;i++){
+                for (int j=0;j<3;j++){
+                    mat1[i,j] += mat2[i,j];
+                }
+            }
+            for (int i=0;i<3;i++){
+                for (int j=0;j<3;j++){
+                    Console.Write($"{mat1[i,j]} ");
+                    if (j==2){
+                        Console.WriteLine("");
+                    }
+                }
             }
         }
     }
