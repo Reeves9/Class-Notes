@@ -1,95 +1,98 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <style>
-        body{
-            font-family: cursive, sans-serif;
-            display: flex ;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #333;
-            color: #fff;
-        }
-        .form {
-            display: flex ;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border: 1px solid #666;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255,255,255,0.1);
-            width: 400;
-            background-color: #444;
-        }
-        .form input, .form select {
-            margin-bottom: 10px;
-        }
-        .input-group{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
+      body {
+        font-family: cursive, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #666;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        width: 400;
+        background-color: #444;
+      }
+      .form input,
+      .form select {
+        margin-bottom: 10px;
+      }
+      .input-group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="form">
-        <h1>Registration Form</h1>
-    <form>
+      <h1>Registration Form</h1>
+      <form>
         <div class="input-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
-        </div>
-       <div class="input-group">
-            <label for="address">Address:</label>
-            <input type="text" name="address" id="address">
-       </div>
-        <div class="input-group">
-            <label for="contact">Contact:</label>
-            <input type="tel" name="contact" id="contact">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
         </div>
         <div class="input-group">
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="other" value="other">
-            <label for="other">Other</label>
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address" />
         </div>
         <div class="input-group">
-            <label for="hobby">Hobby:</label>
-            <input type="checkbox" name="hobby" id="hobby">
+          <label for="contact">Contact:</label>
+          <input type="tel" name="contact" id="contact" />
         </div>
         <div class="input-group">
-            <label for="Role">Role:</label>
-        <select name="role" id="role">
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="input-group">
+          <label for="hobby">Hobby:</label>
+          <input type="checkbox" name="hobby" id="hobby" />
+        </div>
+        <div class="input-group">
+          <label for="Role">Role:</label>
+          <select name="role" id="role">
             <option value="admin">Admin</option>
             <option value="viewer">Viewer</option>
             <option value="manager">Manager</option>
-        </select>
+          </select>
         </div>
-        <input type="button" onclick="display()" value="display">
-    </form>
+        <input type="button" onclick="display()" value="display" />
+      </form>
     </div>
-</body>
-<script>
-  function display(){
-    var user_name = document.getElementById('name').value
-    var user_address = document.getElementById('address').value
-    var user_cantact = document.getElementById('contact').value
-    var user_role = document.getElementById('role').value
-    var user_gender = ''
-    for(i=0;i<3;i++){
-      if (document.getElementsByName('gender')[i].checked==true){
-        user_gender = document.getElementsByName('gender')[i].value
+  </body>
+  <script>
+    function display() {
+      var user_name = document.getElementById("name").value;
+      var user_address = document.getElementById("address").value;
+      var user_cantact = document.getElementById("contact").value;
+      var user_role = document.getElementById("role").value;
+      var user_gender = "";
+      for (i = 0; i < 3; i++) {
+        if (document.getElementsByName("gender")[i].checked == true) {
+          user_gender = document.getElementsByName("gender")[i].value;
+        }
       }
+      document.write(
+        `${user_name},${user_address},${user_cantact},${user_gender},${user_role}`
+      );
     }
-    document.write(`${user_name},${user_address},${user_cantact},${user_gender},${user_role}`)
-  }
- </script>
+  </script>
 </html>
