@@ -1,0 +1,10 @@
+C:\Users\Reeves\source\repos\From\From\bin\Debug\From.exe.config
+C:\Users\Reeves\source\repos\From\From\bin\Debug\From.exe
+C:\Users\Reeves\source\repos\From\From\bin\Debug\From.pdb
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.csproj.AssemblyReference.cache
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.Form1.resources
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.Properties.Resources.resources
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.csproj.GenerateResource.cache
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.csproj.CoreCompileInputs.cache
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.exe
+C:\Users\Reeves\source\repos\From\From\obj\Debug\From.pdb
