@@ -26,9 +26,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Reeves\\source\\repos\\From\\From\\Form1.cs",
               "RelativeDocumentMoniker": "From\\Form1.cs",
-              "ToolTip": "C:\\Users\\Reeves\\source\\repos\\From\\From\\Form1.cs*",
-              "RelativeToolTip": "From\\Form1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Reeves\\source\\repos\\From\\From\\Form1.cs",
+              "RelativeToolTip": "From\\Form1.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAA/wJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T01:04:02.919Z",
               "EditorCaption": ""
@@ -42,7 +42,8 @@
               "ToolTip": "C:\\Users\\Reeves\\source\\repos\\From\\From\\Form1.cs [Design]",
               "RelativeToolTip": "From\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:56:31.855Z"
+              "WhenOpened": "2024-12-16T00:56:31.855Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

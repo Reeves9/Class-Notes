@@ -153,5 +153,13 @@ namespace From
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            USRID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            USRName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            USRAddress.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            USRPhone.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
     }
 }
