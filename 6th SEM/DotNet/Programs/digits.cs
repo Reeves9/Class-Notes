@@ -50,6 +50,14 @@ namespace digits{
             }else{
                 Console.WriteLine("Not dudeni number");
             }
-        }
+            // sum of factorial of factors
+            Console.Write("Enter a number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            fac = 0;
+            for (int i=1;i<=num;i++){
+                if (num % i == 0){
+                    fac += factorial(i);
+                }
+            }
     }
 }
