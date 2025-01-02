@@ -36,16 +36,17 @@ namespace digits{
             }
             Console.WriteLine($"The sum is {sum}");
             // finding dudeni number
+            sum = 0;
             Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
-            proxy = num
+            proxy = num;
             while (num != 0){
                 rem = num % 10;
                 sum += rem;
                 num /= 10;
             }
-            num = num * num * num;
-            if (num == proxy){
+            sum = sum * sum * sum;
+            if (sum == proxy){
                 Console.WriteLine("Dudeny number");
             }else{
                 Console.WriteLine("Not dudeny number");
@@ -59,5 +60,7 @@ namespace digits{
                     fac += factorial(i);
                 }
             }
+            Console.WriteLine($"The sum is {fac}");
+        }
     }
 }
