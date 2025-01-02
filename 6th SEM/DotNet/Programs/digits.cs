@@ -46,9 +46,9 @@ namespace digits{
             }
             num = num * num * num;
             if (num == proxy){
-                Console.WriteLine("Dudeni number");
+                Console.WriteLine("Dudeny number");
             }else{
-                Console.WriteLine("Not dudeni number");
+                Console.WriteLine("Not dudeny number");
             }
             // sum of factorial of factors
             Console.Write("Enter a number: ");
