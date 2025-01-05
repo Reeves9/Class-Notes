@@ -10,17 +10,14 @@ namespace Program{
             return a + b + c;
         }
         //for area of circle
-        public static int area(int radius){
+        public static double area(int radius){
             return (22/7)*radius*radius;
         }
         //for area of triangle
-        public static int area(int bottom, int height){
+        public static double area(int bottom, int height){
             return (1/2)*bottom*height;
         }
         //for area of rectangle
-        public static float area(float length, float breadth){
-            return length*breadth;
-        }
         public static void Main(string[] args){
             int a=1,b=2,c=3;
             Console.WriteLine(add(a,b));
@@ -32,10 +29,6 @@ namespace Program{
             int bottom = Convert.ToInt32(Console.ReadLine());
             int height = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"area is {area(bottom,height)}");
-            Console.Write("enter breadth and height:");
-            int breadth = Convert.ToInt32(Console.ReadLine());
-            height = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"area is {area(breadth,height)}");
         }
     }
 }
