@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="gF47ZrCPspih5D5STg21">
-        <mxGraphModel dx="1485" dy="1056" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1275" dy="1178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -429,10 +429,10 @@
                     <mxGeometry x="5" y="33" width="250" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="yREjnrGovYr2z1x9iULT-111" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Mood Based Music Player&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;" parent="1" vertex="1">
-                    <mxGeometry y="1125" width="240" height="40" as="geometry"/>
+                    <mxGeometry x="125" y="1125" width="240" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Drawn by: Reeshav Mainali&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;" vertex="1" parent="1">
-                    <mxGeometry x="595" y="2100" width="250" height="40" as="geometry"/>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Drawn by: Reeshav Mainali&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="1710" width="250" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
